@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/icons/favicon-32x32.png"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--Navigation menu-->
+    <header class="header" id="home">
+      <a href="index.html" class="logo">
+        <img src="./src/images/logo_w_name.png" alt="logo_w_name"
+      /></a>
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li><a href="index.html">Listing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+      </ul>
+    </header>
+
+    <!--Contact Form-->
+    <div class="container">
+      <form class="contact-form">
+        <input
+          name="name"
+          type="text"
+          class="textarea-input"
+          placeholder="Name"
+        />
+        <input
+          name="email"
+          type="text"
+          class="textarea-input"
+          placeholder="Email"
+        />
+        <textarea
+          name="text"
+          class="textarea-input"
+          placeholder="Message"
+        ></textarea>
+        <input type="submit" value="SUBMIT" formaction="text.html" />
+      </form>
+    </div>
+
+    <!--Footer-->
+    <footer>© Gratis BoligSalg 2020</footer>
+  </body>
+</html>
