@@ -1,157 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" />
     <link rel="manifest" href="manifest.webmanifest" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./src/icons/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/icons/favicon-32x32.png" />
     <title>Gratis BoligSalg</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <!--Navigation menu-->
     <header class="header" id="home">
-      <a href="#" class="logo">
-        <img src="./src/images/logo_w_name.png" alt="logo_w_name"
-      /></a>
-      <input class="menu-btn" type="checkbox" id="menu-btn" />
-      <label class="menu-icon" for="menu-btn"
-        ><span class="navicon"></span
+        <a href="#" class="logo">
+            <img src="./src/images/logo_w_name.png" alt="logo_w_name" /></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span
       ></label>
-      <ul class="menu">
-        <li><a href="#">Listing</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-      </ul>
+        <ul class="menu">
+            <li><a href="#">Listing</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
     </header>
 
     <!--Search Form-->
     <div class="container">
-      <div class="search-bar" id="search-bar">
-        <input placeholder="Search..." class="js-search" type="text" />
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </div>
-      <p class="search-more"><a href="search.html">search by filters</a></p>
-      <br />
-      <br />
+        <div class="search-bar" id="search-bar">
+            <input placeholder="Search..." onkeyup="search_listing()" id="js-search" type="text" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <p class="search-more"><a href="search.html">search by filters</a></p>
+        <br />
+        <br />
+        <script src="src/js/search_script.js"></script>
     </div>
 
     <!--Listing-->
     <div class="container">
-      <div class="listing">
-        <!--Item 01-->
-        <div class="item1 wrapper">
-          <div class="item-img">
-            <a href="house01.html"
-              ><img src="./src/images/item01.png" alt="item01"
-            /></a>
-          </div>
-          <div class="item-info">
-            <p>Bjerregårdsvej 36 C</p>
-            <p>6960 Hvide Sande</p>
-          </div>
-          <div class="item-info">
-            <ul>
-              <li>
-                Type: <span class="float-right">Recreational Property</span>
-              </li>
-              <hr />
-              <li>Living Area: <span class="float-right">120 m²</span></li>
-              <hr />
-              <li>Price: <span class="float-right">2.095.000 DKK</span></li>
-            </ul>
-          </div>
-        </div>
+        <div class="listing">
+            <!--Item 01-->
+            <div class="item1 wrapper">
+                <div class="item-img">
+                    <a href="house01.html"><img src="./src/images/item01.png" alt="item01" /></a>
+                </div>
+                <div class="item-info">
+                    <p>Bjerregårdsvej 36 C</p>
+                    <p>6960 Hvide Sande</p>
+                </div>
+                <div class="item-info">
+                    <ul>
+                        <li>
+                            Type: <span class="float-right">Recreational Property</span>
+                        </li>
+                        <hr />
+                        <li>Living Area: <span class="float-right">120 m²</span></li>
+                        <hr />
+                        <li>Price: <span class="float-right">2.095.000 DKK</span></li>
+                    </ul>
+                </div>
+            </div>
 
-        <!--Item 02-->
-        <div class="item2 wrapper">
-          <div class="item-img">
-            <a href="house02.html"
-              ><img src="./src/images/item02.png" alt="item02"
-            /></a>
-          </div>
-          <div class="item-info">
-            <p>Lokesvej 7</p>
-            <p>6840 Oksbøl</p>
-          </div>
-          <div class="item-info">
-            <ul>
-              <li>Type: <span class="float-right">Villa</span></li>
-              <hr />
-              <li>Living Area: <span class="float-right">180 m²</span></li>
-              <hr />
-              <li>Price: <span class="float-right">2.600.000 DKK</span></li>
-            </ul>
-          </div>
-        </div>
+            <!--Item 02-->
+            <div class="item2 wrapper">
+                <div class="item-img">
+                    <a href="house02.html"><img src="./src/images/item02.png" alt="item02" /></a>
+                </div>
+                <div class="item-info">
+                    <p>Lokesvej 7</p>
+                    <p>6840 Oksbøl</p>
+                </div>
+                <div class="item-info">
+                    <ul>
+                        <li>Type: <span class="float-right">Villa</span></li>
+                        <hr />
+                        <li>Living Area: <span class="float-right">180 m²</span></li>
+                        <hr />
+                        <li>Price: <span class="float-right">2.600.000 DKK</span></li>
+                    </ul>
+                </div>
+            </div>
 
-        <!--Item 03-->
-        <div class="item3 wrapper">
-          <div class="item-img">
-            <a href="house03.html"
-              ><img src="./src/images/item03.png" alt="item03"
-            /></a>
-          </div>
-          <div class="item-info">
-            <p>Stenaldervej 99</p>
-            <p>6950 Ringkøbing</p>
-          </div>
-          <div class="item-info">
-            <ul>
-              <li>
-                Type: <span class="float-right">Housing cooperative</span>
-              </li>
-              <hr />
-              <li>Living Area: <span class="float-right">129 m²</span></li>
-              <hr />
-              <li>Price: <span class="float-right">525.000 DKK</span></li>
-            </ul>
-          </div>
-        </div>
+            <!--Item 03-->
+            <div class="item3 wrapper">
+                <div class="item-img">
+                    <a href="house03.html"><img src="./src/images/item03.png" alt="item03" /></a>
+                </div>
+                <div class="item-info">
+                    <p>Stenaldervej 99</p>
+                    <p>6950 Ringkøbing</p>
+                </div>
+                <div class="item-info">
+                    <ul>
+                        <li>
+                            Type: <span class="float-right">Housing cooperative</span>
+                        </li>
+                        <hr />
+                        <li>Living Area: <span class="float-right">129 m²</span></li>
+                        <hr />
+                        <li>Price: <span class="float-right">525.000 DKK</span></li>
+                    </ul>
+                </div>
+            </div>
 
-        <!--Item 04-->
-        <div class="item4 wrapper">
-          <div class="item-img">
-            <a href="house04.html"
-              ><img src="./src/images/item04.png" alt="item04"
-            /></a>
-          </div>
-          <div class="item-info">
-            <p>Bjergegårdsvej 28</p>
-            <p>8382 Hinnerup</p>
-          </div>
-          <div class="item-info">
-            <ul>
-              <li>
-                Type: <span class="float-right">Housing cooperative</span>
-              </li>
-              <hr />
-              <li>Living Area: <span class="float-right">105 m²</span></li>
-              <hr />
-              <li>Price: <span class="float-right">375.000 DKK</span></li>
-            </ul>
-          </div>
+            <!--Item 04-->
+            <div class="item4 wrapper">
+                <div class="item-img">
+                    <a href="house04.html"><img src="./src/images/item04.png" alt="item04" /></a>
+                </div>
+                <div class="item-info">
+                    <p>Bjergegårdsvej 28</p>
+                    <p>8382 Hinnerup</p>
+                </div>
+                <div class="item-info">
+                    <ul>
+                        <li>
+                            Type: <span class="float-right">Housing cooperative</span>
+                        </li>
+                        <hr />
+                        <li>Living Area: <span class="float-right">105 m²</span></li>
+                        <hr />
+                        <li>Price: <span class="float-right">375.000 DKK</span></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
     <!--End Listing-->
 
     <!--Footer-->
     <footer>© Gratis BoligSalg 2020</footer>
     <script src="src/js/app.js"></script>
-  </body>
+</body>
+
 </html>
