@@ -229,11 +229,11 @@ ul {
 }
 
 .card-img {
-  height: 230px;
+  height: 300px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 200%;
 }
 
 .card-text {

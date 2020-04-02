@@ -4,7 +4,8 @@ form.contact-form {
   padding: 2rem;
 }
 
-.textarea-input {
+.contact-form input[type="text"],
+.contact-form textarea {
   color: black;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
@@ -18,9 +19,11 @@ form.contact-form {
   width: 100%;
   box-sizing: border-box;
   outline: 0;
+  letter-spacing: 0;
 }
 
-.textarea-input:focus {
+.textarea-input:focus,
+.contact-form input:focus {
   border: 2px solid grey;
 }
 
