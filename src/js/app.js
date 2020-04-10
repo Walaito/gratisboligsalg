@@ -1,6 +1,6 @@
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker
-    .register("../../sw_fetchall.js")
+    .register("./sw_fetchall.js")
     .then(function (registration) {
       console.log("Service Worker registered with scope:", registration.scope);
     })
